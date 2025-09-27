@@ -17,7 +17,7 @@ let m3u = '#EXTM3U\n';
 
 filtered.forEach(item => {
   const logo = item.icon || (item.share && item.share.image) || '';
-  const apiUrl = `https://iqilu.vercel.app/api/iqilu?orgid=${item.orgId}&num=${item.index}`;
+  const apiUrl = `https://5iqilu.vercel.app/api/iqilu?orgid=${item.orgId}&num=${item.index}`;
   m3u += `#EXTINF:-1 tvg-logo="${logo}",${item.name}\n`;
   m3u += `${apiUrl}\n`;
 });
